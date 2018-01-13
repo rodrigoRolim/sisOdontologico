@@ -1,0 +1,97 @@
+.body{
+    
+    background-color: white
+}
+
+.navbara{
+    background-color:  #337ab7;
+    color  :white;
+}
+
+.navbar img{
+    height: 30px;
+}
+#conteudo{ 
+    padding-top:1px;
+}
+
+h1 img{
+    height: 36px;
+}
+
+img.submenu-img{display: none}
+
+img.photo{
+    object-fit: none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
+    height:   200px;
+    width:    200px;
+    border: lightgray solid thin;
+
+}
+
+img.photosmall{
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height:   30px;
+  width:    30px;
+
+}
+  
+.agendarow > div{
+    padding:0
+}
+
+
+
+
+.agendarow input:not(:focus), .agendarow span:not(:focus){ 
+    background: transparent;
+    border-left: none;
+    border-right: none;
+    border-color: #EFEFEF;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+
+.agendarow input:disabled { 
+    background-color:  #FCFCFC!important;
+}
+
+label{
+    min-height: 0px!important;
+    text-overflow: ellipsis!important;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#page-wrapper{
+    padding-bottom: 100px;
+}
+
+.dropdown-menu-suggest {
+    display: block!important;
+}
+
+.debito{
+    color:#a94442!important;
+    background-color: #f2dede;
+}
+
+.debito input{
+    color:#a94442!important;
+}
+
+.agendarow  a .glyphicon-user{
+    color:#ddd; 
+}
+
+.agendarow  .text-danger a .glyphicon-user{
+    color:#a94442!important; 
+}
+.agendarow  a:hover .glyphicon-user{
+    color:black; 
+}
+.agendarow a { 
+    text-decoration:none;
+}

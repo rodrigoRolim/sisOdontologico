@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Cadastrando...</title>
+</head>
+<body>
+
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$banco = "sisodonth";
+$tabela = "cad_pac";
+$conexao = mysqli_connect($host, $user, $pass) or die(mysqli_error());
+mysqli_select_db($conexao, $banco)or die(mysql_error());
+?>
+
+<?php
+	$nome_pac= $_POST['nome_pac'];
+	$telef1 = $_POST['telef1'];
+	$telef2 = $_POST['telef2'];
+	$data_nasc = $_POST['data_nasc'];
+	$cpf = $_POST['cpf'];
+	$cidade = $_POST['cidade'];
+	$bairro = $_POST['bairro'];
+	$endereco = $_POST['endereco'];
+	$num_casa = $_POST['num_casa'];
+	$observacao = $_POST['observacao'];
+	$sql = mysqli_query($conexao, "INSERT INTO cad_pac(nome_pac, telef1, telef2, data_nasc, cpf, cidade, bairro, endereco, num_casa, observacao) VALUES('$nome_pac','$telef1', '$telef2', '$data_nasc', '$cpf', '$cidade', '$bairro', '$endereco', '$num_casa', '$observacao')");
+	
+	header("location:reg_paciente.php");
+?>
+</body>
+</html>
+</html>

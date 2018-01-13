@@ -1,0 +1,11 @@
+<?php
+	session_start();
+	$usuarioV = $_POST['usuario'];
+	$senhaV = $_POST['senha'];
+	echo $usuarioV.' - '.$senhaV;
+	include_once("conexao.php");
+	
+	$resultV = mysqli_query($conexao,"SELECT * FROM usuarios WHERE login = 'usuarioV' AND senha='senhaV' LIMIT 1");
+	$resultadoV = mysqli_fetch_assoc($resultV);
+	$resultadoV['nome'];
+?>
