@@ -1,13 +1,13 @@
 <?php 
 
-namespace Hcode\DB;
+namespace Sistema\DB;
 
 class Sql {
 
 	const HOSTNAME = "127.0.0.1";
 	const USERNAME = "root";
-	const PASSWORD = "lichiking";
-	const DBNAME = "db_ecommerce";
+	//const PASSWORD = "lichiking";
+	const DBNAME = "sistema";
 
 	private $conn;
 

@@ -15,7 +15,7 @@
     },
     "autoload":{
     	"psr-4":{
-    		"sisodonto\\":"vendor\\SisOdontologico\\php-classes\\src"
+    		"Sistema\\":"vendor\\sistemabr\\php-classes\\src"
     	}
     }
 }

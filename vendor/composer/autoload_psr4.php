@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'sisodonto\\' => array($vendorDir . '/SisOdontologico/php-classes/src'),
+    'Sistema\\' => array($vendorDir . '/sistemabr/php-classes/src'),
 );

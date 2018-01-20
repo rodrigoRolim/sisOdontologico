@@ -7,16 +7,16 @@ namespace Composer\Autoload;
 class ComposerStaticInit79bebaf02affd25023a586805476cbd5
 {
     public static $prefixLengthsPsr4 = array (
-        's' => 
+        'S' => 
         array (
-            'sisodonto\\' => 10,
+            'Sistema\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'sisodonto\\' => 
+        'Sistema\\' => 
         array (
-            0 => __DIR__ . '/..' . '/SisOdontologico/php-classes/src',
+            0 => __DIR__ . '/..' . '/sistemabr/php-classes/src',
         ),
     );
 
