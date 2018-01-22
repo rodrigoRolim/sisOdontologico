@@ -1,4 +1,4 @@
-
+<?php if(!class_exists('Rain\Tpl')){exit;}?>
 <div class="container">
   <center><h2>Aniversariantes do Dia</h2></center><br />
 	<form name="cad_pac" method="POST" class="form-horizontal" autocomplete="off" 	action="cadastrando.php">

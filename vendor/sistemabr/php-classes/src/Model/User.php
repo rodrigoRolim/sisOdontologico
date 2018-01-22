@@ -17,9 +17,10 @@ class User extends Model{
         if(count($results) === 0){
             throw new \Exception("Usuário inexistente ou senha incorreta", 1);
         }
+        
         $data = $results[0];
 
-        if($password === $data["password"]){
+        if($password === $data["senha"]){
             $user = new User();
             $user->setData($data);
             $_SESSION[User::SESSION] = $user->getValues();
@@ -38,6 +39,29 @@ class User extends Model{
             header("Location: /");
             exit;
         }
+    }
+    public static function listAll(){
+        $sql = new Sql();
+        return $sql->select("SELECT * FROM paciente");
+    }
+   
+    public function save(){
+        $sql = new Sql();
+
+        $sql->query("INSERT INTO paciente(nome_pac,telef1,telef2,data_nasc,cpf,cidade,bairro,endereco,num_casa,observacao)
+        VALUES(:NOME,:TEL1,:TEL2,:NASC,:CPF,:CIDADE,:BAIRRO,:ENDERECO,:NUMERO,:OBS)", array(
+            ":NOME"=>$this->getname(),
+            ":TEL1"=>$this->getphone1(),
+            ":TEL2"=>$this->getphone2(),
+            ":NASC"=>$this->getdatanasc(),
+            ":CPF"=>$this->getcpf(),
+            ":CIDADE"=>$this->getcidade(),
+            ":BAIRRO"=>$this->getbairro(),
+            ":ENDERECO"=>$this->getendereco(),
+            ":NUMERO"=>$this->getnumcasa(),
+            ":OBS"=>$this->getobservacao()
+        ));
+        
     }
     public static function logout(){
 

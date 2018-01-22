@@ -1,4 +1,4 @@
-
+<?php if(!class_exists('Rain\Tpl')){exit;}?>
 
 <div class="container">
   <center><h2>Relatório de Paciente</h2></center><br />

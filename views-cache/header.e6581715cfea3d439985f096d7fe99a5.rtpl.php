@@ -12,6 +12,8 @@
       background-color:black;
       color:white;
       text-align: center;
+      padding:5px;
+      margin:0;
     }
   </style>
 </head>
@@ -24,23 +26,23 @@
       <a class="navbar-brand" href="#">Clínica Dra. Regina</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="index.php">Início</a></li>
+      <li><a href="/home">Início</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastros<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="cad_paciente.html">Pacientes</a></li>
-		   <li><a href="cad_consulta.html">Consultas</a></li>
-          <li><a href="cad_contas_receber.html">Contas à Receber</a></li>
+          <li><a href="/cadastro/paciente">Pacientes</a></li>
+		   <li><a href="/cadastro/consulta">Consultas</a></li>
+          <li><a href="/cadastro/conta">Contas à Receber</a></li>
         </ul>
       </li>
 	  
 	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Relatórios<span class="caret"></span></a>
         <ul class="dropdown-menu">
-		  <li><a href="rel_paciente.html">Paciente</a></li>
-		  <li><a href="rel_paciente_todos.html">Todos os Pacientes</a></li>
-          <li><a href="rel_contas_receber.html">Contas à Receber</a></li>
-		  <li><a href="rel_consulta.html">Consultas</a></li>
- 		  <li><a href="rel_consulta_retorno.html">Retorno de Consultas</a></li>
-		  <li><a href="rel_aniversario.html">Aniversários</a></li>
+		  <li><a href="/relatorios/paciente">Paciente</a></li>
+		  <li><a href="/relatorios/todospacientes">Todos os Pacientes</a></li>
+          <li><a href="/relatorios/contas">Contas à Receber</a></li>
+		  <li><a href="/relatorios/consultas">Consultas</a></li>
+ 		  <li><a href="/relatorios/retornos">Retorno de Consultas</a></li>
+		  <li><a href="/relatorios/aniversariantes">Aniversários</a></li>
         </ul>
       </li>
 	  

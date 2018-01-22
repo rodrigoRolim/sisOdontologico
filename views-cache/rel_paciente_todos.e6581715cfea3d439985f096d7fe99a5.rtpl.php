@@ -1,4 +1,4 @@
-
+<?php if(!class_exists('Rain\Tpl')){exit;}?>
 
 
 <div class="container">
@@ -23,12 +23,12 @@
 				</tr>
 			</thead>
 			<tbody>
-				{loop="$pacientes"}
+				<?php $counter1=-1;  if( isset($pacientes) && ( is_array($pacientes) || $pacientes instanceof Traversable ) && sizeof($pacientes) ) foreach( $pacientes as $key1 => $value1 ){ $counter1++; ?>
 				<tr>
-					<td scope="row">{$value.id}</td>
-					<td scope="row">{$value.nome_pac}</td>
+					<td scope="row"><?php echo htmlspecialchars( $value1["id"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td>
+					<td scope="row"><?php echo htmlspecialchars( $value1["nome_pac"], ENT_COMPAT, 'UTF-8', FALSE ); ?></td>
 				</tr>
-				{/loop}
+				<?php } ?>
 			</tbody>
 		</table>
 	</form>
